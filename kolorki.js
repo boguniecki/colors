@@ -1,5 +1,5 @@
 const background = document.body;
-
+const text = document.getElementById("kolor");
 
 function changeColor() {
     let red = Math.floor(Math.random() * 256);
@@ -8,4 +8,5 @@ function changeColor() {
     let color = 'rgb('+ red +', '+ green +', '+ blue +')'; 
 
     background.style.backgroundColor = color;
-}
+    text.innerHTML = "<p>" + color + "</p>";
+}   
