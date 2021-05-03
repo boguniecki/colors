@@ -1,8 +1,11 @@
 const background = document.body;
-const colors = ["red", "green", "blue"];
 
-function changeColor() {    
-    let color = colors[Math.floor(Math.random() * colors.length)];
+
+function changeColor() {
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    let color = 'rgb('+ red +', '+ green +', '+ blue +')'; 
 
     background.style.backgroundColor = color;
 }
