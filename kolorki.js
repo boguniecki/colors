@@ -1,8 +1,8 @@
 const background = document.getElementById("wrapper");
 const colors = ["red", "green", "blue"];
-let color = colors[Math.floor(Math.random() * colors.length)];
 
-function changeColor() {
-
+function changeColor() {    
+    let color = colors[Math.floor(Math.random() * colors.length)];
+    
     background.style.backgroundColor = color;
 }
